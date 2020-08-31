@@ -1,0 +1,62 @@
+
+<style>
+    .button{
+             position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-family: monospace;
+            color: #cfd8dc;
+            font-size: 20px;   }
+    .createbtn {
+        background-color: rgb(56, 105, 228);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 50%;}
+    .joinbtn {
+        text-align : center;
+        margin : 04px 04px;
+         padding-top: 16px;
+        width: 50%;
+        cursor: pointer;
+        background-color: #f44336; }
+@media screen and (max-width: 320px) {
+  .bodyyy{
+      margin : 10px 10px;
+      padding : 10px 10px;
+      height : 80%;
+      width : 90%  }
+  } 
+    @media screen and (max-width: 1200px) {
+  .bodyyy{
+     margin : 10px 10px;
+      padding : 10px 10px;
+      height : 80%;
+      width : 90%  }
+  }
+
+    </style>
+
+  <!--<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>-->
+
+<body>
+<div class="ui small menu">
+  <div class="right menu">
+     <div class="item">
+      <h4>{{user.email}}</h4>
+      </div>
+    <div class="item">
+        <a href="/logout" class="ui primary button">Log Out</a>
+    </div></div></div>
+
+  <div class = "button">
+        <button type="submit" class="createbtn" onclick = "javascript:window.location='/streamer';">Create Broadcast</button>               
+        <button type="button" class="joinbtn" onclick = "javascript:window.location='/client';">Join Broadcast</button>
+   </div> <!--button-->
+
+  </body>
+ 
